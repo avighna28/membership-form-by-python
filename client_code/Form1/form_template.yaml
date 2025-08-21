@@ -1,14 +1,58 @@
 components:
 - components: []
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - layout_properties: {grid_position: 'EKDNRQ,QLTYBC'}
+    name: label_1
+    properties: {background: '', border: '', font_size: 20, foreground: '', icon: 'fa:arrow-right', role: input-prompt, text: Enter Your Name}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item['''']', property: font, writeback: false}
+    layout_properties: {grid_position: 'KIJZIV,CYGCIW'}
+    name: text_box_1
+    properties: {background: '', bold: false, border: 1px, font: '', font_size: 17, italic: false, placeholder: Your Name, underline: false}
+    type: TextBox
+  - layout_properties: {grid_position: 'FFRQFY,DIJGNE'}
+    name: label_2
+    properties: {font_size: 19, icon: 'fa:arrow-right', text: Enter Your Weright}
+    type: Label
+  - layout_properties: {grid_position: 'NYLTDC,RGCDQL'}
+    name: text_box_2
+    properties: {placeholder: Enter Your Weight (KG)}
+    type: TextBox
+  - layout_properties: {grid_position: 'ZITMVL,BEWKUH'}
+    name: label_4
+    properties: {font_size: 17, icon: 'fa:arrow-right', text: Your Address}
+    type: Label
+  - layout_properties: {grid_position: 'WBDVQH,HTWUQF'}
+    name: text_area_1
+    properties: {italic: true, text: Enter your full address, underline: false}
+    type: TextArea
+  - layout_properties: {grid_position: 'SCUWJD,WFSGQJ'}
+    name: label_3
+    properties: {font_size: 17, icon: 'fa:street-view', italic: false, text: 'Do You Need Personal tranning '}
+    type: Label
+  - layout_properties: {grid_position: 'WVRTQK,KPHWQZ'}
+    name: check_box_1
+    properties: {border: 1px, checked: false, text: 'yes'}
+    type: CheckBox
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'DPWHLH,ALDMVC'}
+    name: button_1
+    properties: {align: left, bold: false, border: '', role: filled-button, text: submit, underline: false}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
-  name: navbar_links
-  properties: {}
-  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_5
+  properties: {bold: true, font_size: 17, italic: true, text: 'Membership Form                                                                                                            check out free plans '}
+  type: Label
 container:
-  properties: {html: '@theme:standard-page.html'}
+  properties: {background: '', html: '@theme:standard-page.html'}
   type: HtmlTemplate
 is_package: true
