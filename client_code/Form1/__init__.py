@@ -18,5 +18,10 @@ class Form1(Form1Template):
     weight = int(self.text_box_2.text)
     address = self.text_area_1.text
     personal = self.check_box_1.checked
-    anvil.server.call('submit', name = name,address=address,weight=weight,personal =personal)
+    mounth =  int(self.text_box_3.text)
+    anvil.server.call('submit', name = name,address=address,weight=weight,personal =personal,mounth=mounth)
     Notification("your response has been recorded").show()
+
+  def text_box_3_show(self, **event_args):
+    """This method is called when the TextBox is shown on the screen"""
+    pass

@@ -1,5 +1,9 @@
 components:
-- components: []
+- components:
+  - layout_properties: {}
+    name: link_1
+    properties: {foreground: red, icon: 'fa:link', text: click here, tooltip: '', url: 'https://www.muscleandstrength.com/workout-routines'}
+    type: Link
   layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
@@ -31,6 +35,15 @@ components:
     name: text_area_1
     properties: {italic: true, text: Enter your full address, underline: false}
     type: TextArea
+  - layout_properties: {grid_position: 'RVBQEP,CCCZYR'}
+    name: label_6
+    properties: {text: Months of tranning}
+    type: Label
+  - event_bindings: {show: text_box_3_show}
+    layout_properties: {grid_position: 'DYTLZC,RQRTPN'}
+    name: text_box_3
+    properties: {placeholder: 'enter months = 1month , 2 month , 3month'}
+    type: TextBox
   - layout_properties: {grid_position: 'SCUWJD,WFSGQJ'}
     name: label_3
     properties: {font_size: 17, icon: 'fa:street-view', italic: false, text: 'Do You Need Personal tranning '}
