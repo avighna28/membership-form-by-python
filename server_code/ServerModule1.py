@@ -25,4 +25,4 @@ def submit(name,address,weight,personal,mounth):
                   weight is {weight} 
                   and live at {address} 
                   personal tranning {personal}
-                  mounth {mounth}""")
+                  month {month}""")
